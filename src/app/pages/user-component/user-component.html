@@ -1,0 +1,42 @@
+<h1>Usuarios</h1>
+<p>Total: {{ usuarios().length }}</p>
+<table>
+    <thead>
+        <tr>
+            <th>ID: </th>
+            <th>Name: </th>
+            <th>Email: </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (usuario of usuarios; track usuario.id){
+            <tr>
+                <td> {{usuario.id}} </td>
+                <td> {{usuario.name}} </td>
+                <td> {{usuario.email}} </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+<!-- 
+<h2>USUARIOS</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (usuario of usuarios; track usuario.id){
+            <tr>
+                <td>{{usuario.id}}</td>
+                <td>{{usuario.name}}</td>
+                <td>{{usuario.email}}</td>
+            </tr>
+        }
+    </tbody>
+</table> -->
