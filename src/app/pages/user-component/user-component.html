@@ -1,5 +1,6 @@
-<h1>Usuarios</h1>
+<!-- <h1>Usuarios</h1>
 <p>Total: {{ usuarios().length }}</p>
+ -->
 <table>
     <thead>
         <tr>
@@ -9,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        @for (usuario of usuarios; track usuario.id){
+        @for (usuario of usuarios(); track usuario.id){
             <tr>
                 <td> {{usuario.id}} </td>
                 <td> {{usuario.name}} </td>
