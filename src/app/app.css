@@ -1,0 +1,6 @@
+.contenedor {
+  display: flex;
+  justify-content: space-between; /* izquierda, centro, derecha */
+  align-items: flex-start; /* opcional */
+  padding: 20px;
+}
